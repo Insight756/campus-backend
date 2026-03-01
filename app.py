@@ -112,5 +112,9 @@ def unbook_spot():
 
     return jsonify({"message": "Бронь отменена"})
 
+@app.route("/")
+def home():
+    return "Campus backend is running!"
+
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000)
